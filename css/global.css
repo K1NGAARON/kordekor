@@ -1,0 +1,27 @@
+/* TERMINA */
+@import url("https://use.typekit.net/zdv0evm.css");
+
+/* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap');
+
+
+:root {
+    --primary: #FFFF29;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #dadada;
+}
+
+* {
+    font-family: "termina", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "termina", sans-serif;
+    font-weight: 700;
+}
+
