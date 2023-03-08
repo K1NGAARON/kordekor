@@ -1,15 +1,12 @@
-/* TERMINA */
 @import url("https://use.typekit.net/zdv0evm.css");
-
-/* ROBOTO */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap');
-
 
 :root {
     --primary: #FFFF29;
     --white: #ffffff;
     --black: #000000;
     --grey: #dadada;
+    --transition: all .25s ease-in-out;
 }
 
 * {
@@ -19,9 +16,42 @@
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: "termina", sans-serif;
     font-weight: 700;
+    margin: 40px 0;
 }
 
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.subheadline {
+    font-family: "termina", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 0;
+    display: 0;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+}
+
+.btn.ghost-btn {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+    transition: var(--transition);
+}
+
+.btn.ghost-btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+    transition: var(--transition);
+}
