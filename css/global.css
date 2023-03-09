@@ -96,9 +96,9 @@ p {
     transition: var(--transition);
 }
 
-main .row-fluid-wrapper {
+/* main .row-fluid-wrapper {
     margin: 40px auto;
-}
+} */
 
 .quote::before {
     content: '"';
