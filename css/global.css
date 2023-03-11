@@ -66,6 +66,7 @@ p {
 }
 
 .copyright-section .hs-menu-wrapper ul li a {
+    font-family: "Roboto", sans-serif!important;
     color: var(--black)!important;
 }
 
@@ -132,13 +133,17 @@ p {
     gap: 20px;
 }
 
-.header .hs-menu-wrapper ul li.hs-menu-item-branch > a {
+.header .hs-menu-wrapper ul li a {
     font-family: "Roboto", sans-serif!important;
+}
+
+.header .hs-menu-wrapper ul li.hs-menu-item-branch > a {
     color: #959595;
 }
 
 .header .hs-menu-wrapper ul li.hs-menu-item.active-branch > a,
 .header .hs-menu-wrapper ul li a:hover {
+    font-family: "Roboto", sans-serif!important;
     color: var(--black)!important;
 }
 
