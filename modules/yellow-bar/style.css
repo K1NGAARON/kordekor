@@ -1,0 +1,11 @@
+.yellow-bar {
+    background-color: var(--primary);
+    border: none;
+    width: 40px;
+    height: 5px;
+    outline: none;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    border-style: unset;
+}
