@@ -21,13 +21,9 @@
           </a>
           <div class="post-article__content">
             <a href="{{ rec_post.absolute_url }}" class="post-article__title">{{ rec_post.name }}</a>
-            <div class="post-article__text">
-              {{ rec_post.post_body|truncatehtml(200, "..." , false) }}
-            </div>
-            <a href="{{ rec_post.absolute_url }}" class="post-article__link">
-              Read More
-              <svg class="ms-1" viewBox="0 0 16 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.25a.75.75 0 000 1.5v-1.5zm14.53 1.28a.75.75 0 000-1.06L10.757.697a.75.75 0 00-1.06 1.06L13.939 6l-4.242 4.243a.75.75 0 001.06 1.06L15.53 6.53zM1 6.75h14v-1.5H1v1.5z"></path></svg>
-            </a>
+            <p class="author">
+              Ontwerper {{ rec_post.blog_post_author.display_name }}
+            </p>
           </div>
         </article>
       {% endfor %}
