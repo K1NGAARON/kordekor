@@ -1,0 +1,15 @@
+.quote::before {
+    content: '"';
+    color: var(--black);
+}
+
+.quote .body {
+    font-family: "Termina", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.quote .author {
+    font-family: "Termina", sans-serif;
+    text-transform: uppercase;
+}
