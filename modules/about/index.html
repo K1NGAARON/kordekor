@@ -1,0 +1,909 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+screenshotPath: ../../assets/images/covers/cover-about.jpg
+label: About
+-->
+{% extends "../../assets/layouts/base.html" %}
+
+{% block body %}
+
+{% dnd_area "about-area" label="About area" class="about" %}
+
+<!-- Begin hero section -->
+{% include_dnd_partial 
+  path='../../sections/text-carousel-section-left.html' 
+  context={
+    'title': {
+      'content': '<h1>about <strong>aesthetics</strong><br>gallery</h1>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'lg': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 50,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        }
+      },
+    },
+    'description': {
+      'content': '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 50,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'lg': {
+          'top_spacing': 50,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 50,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        }
+      }
+    },
+    'anchor': {
+      'anchor_type': "image",
+      'image_field': { 'src' : get_asset_url('../../assets/images/icons/arrow-down.svg') },
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          },
+        },       
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          },
+        },
+        'md': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'right',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        },
+        'lg': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'right',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'right',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        }
+      }
+    },
+    'carousel': {
+      'large_desktop_items': 1,
+      'small_desktop_items': 1,
+      'large_tablet_items': 1,
+      'small_tablet_items': 1,
+      'mobile_items': 1,
+      'show_item_texts': False,
+      'change_shapes_color_depending_on_current_slide': True,
+      'style': {
+        'show_decoration_shapes': True,
+        'display_images_as_circle_on_mobile': True,
+        'show_arrows': False,
+        'show_dots': True,
+        'images_format': 'three-four',
+        'revert_display': false,
+        'shapes_display': "display_one"
+      },
+      'carousel_item': [
+        { 
+          'image_field': { 'src' : get_asset_url('../../assets/images/visuals/about-visual-1.jpg') },
+          'first_shape_color': { 'color' : theme.global_colors.first.color, 'opacity' : 100 },
+          'second_shape_color': { 'color' : theme.global_colors.second.color, 'opacity' : 100 }
+        },
+        { 
+          'image_field': { 'src' : get_asset_url('../../assets/images/visuals/about-visual-2.jpg') },
+          'first_shape_color': { 'color' : "#9B302B", 'opacity' : 100 },
+          'second_shape_color': { 'color' : "#F8B312", 'opacity' : 100 }
+        },
+        { 
+          'image_field': { 'src' : get_asset_url('../../assets/images/visuals/about-visual-3.jpg') },
+          'first_shape_color': { 'color' : "#DEA87D", 'opacity' : 100 },
+          'second_shape_color': { 'color' : "#036E8B", 'opacity' : 100 }
+        }
+      ]
+    }
+  }
+%}
+<!-- End hero section -->
+
+<!-- Begin expertise section -->
+{% include_dnd_partial 
+  path='../../sections/text-image-section-right.html'
+  context={
+    'text_image_title': {
+      'content': '<h2>unmatched<br><strong>expertise</strong></h2>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 150,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'lg': {
+          'top_spacing': 100,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 50,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        }
+      },
+    },
+    'text_image_description': {
+      'content': '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 180,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 100,
+          'text_alignment': 'left'
+        },
+        'lg': {
+          'top_spacing': 120,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 100,
+          'text_alignment': 'left'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 50,
+          'left_spacing': 0,
+          'right_spacing': 100,
+          'text_alignment': 'left'
+        }
+      }
+    },
+    'text_image_anchor': {
+      'anchor_type': "image",
+      'image_field': { 'src' : get_asset_url('../../assets/images/icons/arrow-down.svg') },
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          },
+        },       
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          },
+        },
+        'md': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        },
+        'lg': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        }
+      }
+    },
+    'text_image_visual': {
+      'image_field': { 'src' : get_asset_url('../../assets/images/visuals/about-visual-4.jpg') },
+      'style': {
+        'revert_display': false,
+        'shapes_display': "display_one",
+        'first_shape_color': { 'color' : theme.global_colors.third_accent.color, 'opacity' : 100 },
+        'second_shape_color': { 'color' : theme.global_colors.third.color, 'opacity' : 100 },
+      }
+    }
+  }
+
+%}
+<!-- End expertise section -->
+
+<!-- Begin artworks section -->
+{% include_dnd_partial 
+  path='../../sections/text-image-section-left.html'
+  context={
+    'text_image_title': {
+      'content': '<h2>cautiously<br>curated<br><strong>artworks</strong></h2>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 150,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'lg': {
+          'top_spacing': 100,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 50,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left'
+        }
+      }
+    },
+    'text_image_description': {
+      'content': '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 180,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 100,
+          'text_alignment': 'left'
+        },
+        'lg': {
+          'top_spacing': 120,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 100,
+          'text_alignment': 'left'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 50,
+          'left_spacing': 0,
+          'right_spacing': 100,
+          'text_alignment': 'left'
+        }
+      }
+    },
+    'text_image_anchor': {
+      'anchor_type': "image",
+      'image_field': { 'src' : get_asset_url('../../assets/images/icons/arrow-down.svg') },
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          },
+        },       
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          },
+        },
+        'md': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        },
+        'lg': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'left',
+          'anchor_settings': {
+            'width': 78,
+            'height': 78,
+            'top_spacing': 20,
+            'bottom_spacing': 20,
+            'left_spacing': 20,
+            'right_spacing': 20,
+            'border_radius': 78,
+            'border_width': 3,
+            'color_field': {'color': "#253543", 'opacity': 100 },
+            'border_color': {'color': "#253543", 'opacity': 100 }
+          }
+        }
+      }
+    },
+    'text_image_visual': {
+      'image_field': { 'src' : get_asset_url('../../assets/images/visuals/about-visual-5.jpg') },
+      'style': {
+        'first_shape_color': { 'color' : theme.global_colors.fourth_accent.color, 'opacity' : 100 },
+        'second_shape_color': { 'color' : theme.global_colors.fourth.color, 'opacity' : 100 },
+        'revert_display': true,
+        'shapes_display': "display_three"
+      }
+    }
+  }
+
+%}
+<!-- End artworks section -->
+
+<!-- Begin event section -->
+{% include_dnd_partial 
+  path='../../sections/carousel-section.html'
+  context={
+    'carousel_title': {
+      'content': '<h2><strong>upcoming</strong> events</h2>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'lg': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        }
+      }
+    },
+    'carousel': {
+      'carousel_item': [
+        { 
+          'image_field': { 'src' : get_asset_url('../../assets/images/visuals/event-visual-1.jpg') },
+          'title': "floral explosion",
+          'category': "Exhibit, March 3rd to March 10th"
+        },
+        { 
+          'image_field': { 'src' : get_asset_url('../../assets/images/visuals/event-visual-2.jpg') },
+          'title': "silk effect",
+          'category': "Exhibit, June 3rd to July 10th"
+        },
+        { 
+          'image_field': { 'src' : get_asset_url('../../assets/images/visuals/event-visual-3.jpg') },
+          'title': "modern abstraction",
+          'category': "Exhibit, August 3rd to Septembre 10th"
+        }
+      ]
+    }
+  }
+%}
+<!-- End event section -->
+
+<!-- Begin CTA section -->
+{% include_dnd_partial 
+  path='../../sections/cta-section.html'
+  context={
+    'cta_section_description': {
+      'content': '<h2>want a<br><strong>sneak peak?</strong></h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'lg': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        }
+      },
+    },
+    'cta_section_buttons': {
+      "button": [
+        {
+          'text': 'contact us',
+          'color': 'default',
+          'hover_color': 'default',
+          'background_color': 'first',
+          'hover_background_color': 'black',
+          'border_color': 'first',
+          'hover_border_color': 'black'
+        }
+      ],
+      'style': {
+        'mobile_horizontal_alignment': "justify-content-center",
+        'small_tablet_horizontal_alignment': "justify-content-sm-center",
+        'large_tablet_horizontal_alignment': "justify-content-md-center",
+        'small_desktop_horizontal_alignment': "justify-content-lg-center",
+        'large_desktop_horizontal_alignment': "justify-content-xl-center"
+      }
+    }
+  }
+%}
+<!-- End CTA section -->
+
+<!-- Begin Background shapes section -->
+{% include_dnd_partial 
+  path='../../sections/page-background-shapes-section.html'
+  context={
+    'page_background_shapes' : {
+      'shape' : [
+        {
+          'background_color': { 'color': theme.global_colors.fifth_accent.color, 'opacity' : 100 },
+          'border_radius': 'rounded-full',
+          'display': [
+            {
+              'resolution': 'default', 
+              'width': 400,
+              'height': 400,
+              'size_unit': 'px',
+              'top_position': 0,
+              'left_position': 0,
+              'position_unit': '%',
+              'set_horizontal_position_from_right': False,
+              'add_vertical_translation': True,
+              'add_horizontal_translation': True,
+            },
+            {
+              'resolution': 'xs', 
+              'width': 600,
+              'height': 600,
+              'size_unit': 'px',
+              'top_position': 0,
+              'left_position': 0,
+              'position_unit': '%',
+              'set_horizontal_position_from_right': False,
+              'add_vertical_translation': True,
+              'add_horizontal_translation': True,
+            },
+            {
+              'resolution': 'sm', 
+              'width': 1400,
+              'height': 1400,
+              'size_unit': 'px',
+              'top_position': 0,
+              'left_position': 0,
+              'position_unit': '%',
+              'set_horizontal_position_from_right': False,
+              'add_vertical_translation': True,
+              'add_horizontal_translation': True,
+            }
+          ]
+        },
+        {
+          'background_color': { 'color': theme.global_colors.fourth_accent.color, 'opacity' : 100 },
+          'border_radius': 'rounded-full',
+          'display': [
+            {
+              'resolution': 'default', 
+              'width': 400,
+              'height': 400,
+              'size_unit': 'px',
+              'top_position': 950,
+              'left_position': 0,
+              'position_unit': 'px',
+              'set_horizontal_position_from_right': True,
+              'add_vertical_translation': False,
+              'add_horizontal_translation': True,
+            },
+            {
+              'resolution': 'xs', 
+              'width': 600,
+              'height': 600,
+              'size_unit': 'px',
+              'top_position': 1250,
+              'left_position': 0,
+              'position_unit': 'px',
+              'set_horizontal_position_from_right': True,
+              'add_vertical_translation': False,
+              'add_horizontal_translation': True,
+            },
+            {
+              'resolution': 'sm', 
+              'width': 1100,
+              'height': 1100,
+              'size_unit': 'px',
+              'top_position': 750,
+              'left_position': 0,
+              'position_unit': 'px',
+              'set_horizontal_position_from_right': True,
+              'add_vertical_translation': False,
+              'add_horizontal_translation': True,
+            }
+          ]
+        },
+        {
+          'background_color': { 'color': theme.global_colors.second_accent.color, 'opacity' : 100 },
+          'border_radius': 'rounded-full',
+          'display': [
+            {
+              'resolution': 'default', 
+              'width': 400,
+              'height': 400,
+              'size_unit': 'px',
+              'top_position': 2750,
+              'left_position': -100,
+              'position_unit': 'px',
+              'set_horizontal_position_from_right': False,
+              'add_vertical_translation': False,
+              'add_horizontal_translation': True,
+            },
+            {
+              'resolution': 'xs', 
+              'width': 600,
+              'height': 600,
+              'size_unit': 'px',
+              'top_position': 3350,
+              'left_position': -100,
+              'position_unit': 'px',
+              'set_horizontal_position_from_right': False,
+              'add_vertical_translation': False,
+              'add_horizontal_translation': True,
+            },
+            {
+              'resolution': 'sm', 
+              'width': 1100,
+              'height': 1100,
+              'size_unit': 'px',
+              'top_position': 2150,
+              'left_position': -100,
+              'position_unit': 'px',
+              'set_horizontal_position_from_right': False,
+              'add_vertical_translation': False,
+              'add_horizontal_translation': True,
+            }
+          ]
+        }
+      ]
+    }
+  }
+%}
+<!-- End Background shapes section -->
+{% end_dnd_area %}
+
+{% endblock body %}
