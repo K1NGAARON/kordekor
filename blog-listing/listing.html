@@ -1,7 +1,0 @@
-{% set rec_posts = blog_recent_posts("default", 5) %} {# change the number to the amount of posts you like to show #}
-{% for rec_post in rec_posts %}
-    <img src="{{rec_post.featured_image" alt="{{ rec_post.featured_image_alt_text}}"> 
-<h3 class="post-title">{{ rec_post.name }}</h3>
-<p class="post-excrept">{{rec_post.post_body|striptags|truncate(200, "...", false)</p>
-<a href="{{rec_post.absolute_url }}" class="btn primaryBtn">read more</a>
-{% endfor %}
