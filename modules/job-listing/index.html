@@ -8,13 +8,14 @@
             <img src="{{ rec_post.featured_image }}" alt="{{ rec_post.featured_image_alt_text }}">
         </div>
         <div class="item">
+            <i class="fa-solid fa-quote-left icon"></i>
             <p class="quote">
-                "{{ content.post_body }}"
+                {{ rec_post.meta_description }}
             </p>
-            <p class="author">
+            <p class="author subheadline">
                 Ontwerper {{ rec_post.blog_post_author.display_name }}
             </p>
-            <a href="{{ rec_post.absolute_url }}" class="btn">
+            <a href="{{ rec_post.absolute_url }}" class="btn hs-button">
                 Naar de vacature {{ rec_post.name }}
             </a>
         </div>
