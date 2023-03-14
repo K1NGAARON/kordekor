@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+<div class="blog-listing">
+    <div class="grid-wrapper">
+          <article class="post-article {% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}" data-tag="{% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}">
+            <a href="{{ rec_post.absolute_url }}" class="post-article__image">
+              <img class="post-img" src="/img/image1.jpg" alt="{{ rec_post.featured_image_alt_text }}">
+            </a>
+            <div class="post-article__content">
+              <a href="{{ rec_post.absolute_url }}" class="post-article__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ex earum? Architecto non quis cum voluptatem esse, asperiores vero nulla explicabo ratione! Enim, iste reiciendis?
+              </p>
+              <a class="btn hs-button" href="">
+                Lees meer
+              </a>
+            </div>
+          </article>
+
+          <article class="post-article {% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}" data-tag="{% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}">
+            <a href="{{ rec_post.absolute_url }}" class="post-article__image">
+              <img src="/img/image2.jpg" alt="{{ rec_post.featured_image_alt_text }}">
+            </a>
+            <div class="post-article__content">
+              <a href="{{ rec_post.absolute_url }}" class="post-article__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ex earum? Architecto non quis cum voluptatem esse, asperiores vero nulla explicabo ratione! Enim, iste reiciendis?
+              </p>
+              <a class="btn hs-button" href="">
+                Lees meer
+              </a>
+            </div>
+          </article>
+
+          <article class="post-article {% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}" data-tag="{% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}">
+            <a href="{{ rec_post.absolute_url }}" class="post-article__image">
+              <img src="/img/image3.jpg" alt="{{ rec_post.featured_image_alt_text }}">
+            </a>
+            <div class="post-article__content">
+              <a href="{{ rec_post.absolute_url }}" class="post-article__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ex earum? Architecto non quis cum voluptatem esse, asperiores vero nulla explicabo ratione! Enim, iste reiciendis?
+              </p>
+              <a class="btn hs-button" href="">
+                Lees meer
+              </a>
+            </div>
+          </article>
+
+          <article class="post-article {% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}" data-tag="{% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}">
+            <a href="{{ rec_post.absolute_url }}" class="post-article__image">
+              <img src="/img/image4.jpg" alt="{{ rec_post.featured_image_alt_text }}">
+            </a>
+            <div class="post-article__content">
+              <a href="{{ rec_post.absolute_url }}" class="post-article__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ex earum? Architecto non quis cum voluptatem esse, asperiores vero nulla explicabo ratione! Enim, iste reiciendis?
+              </p>
+              <a class="btn hs-button" href="">
+                Lees meer
+              </a>
+            </div>
+          </article>
+
+          <article class="post-article {% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}" data-tag="{% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}">
+            <a href="{{ rec_post.absolute_url }}" class="post-article__image">
+              <img src="/img/image5.jpg" alt="{{ rec_post.featured_image_alt_text }}">
+            </a>
+            <div class="post-article__content">
+              <a href="{{ rec_post.absolute_url }}" class="post-article__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ex earum? Architecto non quis cum voluptatem esse, asperiores vero nulla explicabo ratione! Enim, iste reiciendis?
+              </p>
+              <a class="btn hs-button" href="">
+                Lees meer
+              </a>
+            </div>
+          </article>
+
+          <article class="post-article {% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}" data-tag="{% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}">
+            <a href="{{ rec_post.absolute_url }}" class="post-article__image">
+              <img src="/img/image6.jpg" alt="{{ rec_post.featured_image_alt_text }}">
+            </a>
+            <div class="post-article__content">
+              <a href="{{ rec_post.absolute_url }}" class="post-article__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ex earum? Architecto non quis cum voluptatem esse, asperiores vero nulla explicabo ratione! Enim, iste reiciendis?
+              </p>
+              <a class="btn hs-button" href="">
+                Lees meer
+              </a>
+            </div>
+          </article>
+
+          <article class="post-article {% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}" data-tag="{% for tag in rec_post.tag_list %} {{ tag.name|lower|replace(' ', '-') }}{% endfor %}">
+            <a href="{{ rec_post.absolute_url }}" class="post-article__image">
+              <img src="/img/image7.jpg" alt="{{ rec_post.featured_image_alt_text }}">
+            </a>
+            <div class="post-article__content">
+              <a href="{{ rec_post.absolute_url }}" class="post-article__title">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ex earum? Architecto non quis cum voluptatem esse, asperiores vero nulla explicabo ratione! Enim, iste reiciendis?
+              </p>
+              <a class="btn hs-button" href="">
+                Lees meer
+              </a>
+            </div>
+          </article>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+</div>
+    
+</body>
+</html>
