@@ -149,23 +149,26 @@ h3,
     display: none!important;
 }
 
-.input *,
-.input *::placeholder,
-.input input::placeholder,
-.input textarea::placeholder,
-.input input:-ms-input-placeholder {
+form input *,
+form input *::placeholder,
+form input::placeholder,
+form textarea::placeholder,
+form input:-ms-input-placeholder {
     font-family: "Roboto", sans-serif;
 }
 
 .input *,
 .input *::placeholder,
-form input[type=text] {
+form input[type=text],
+form input[type=text]::placeholder,
+form textarea::placeholder {
     font-size: var(--form-input-size)!important;
+    color: var(--black)!important;
 }
 
-.input input::placeholder,
-.input textarea::placeholder,
-.input input:-ms-input-placeholder {
+form input::placeholder,
+form textarea::placeholder,
+form input:-ms-input-placeholder {
     color: var(--black)!important;
     opacity: 1;
 }
