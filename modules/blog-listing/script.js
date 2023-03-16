@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
     
     var seen = {};
-    $('.bblog-listing .filter-list li').each(function() {
+    $('.blog-listing .filter-list li').each(function() {
       var txt = $(this).text();
       if (seen[txt])
         $(this).remove();
