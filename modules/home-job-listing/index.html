@@ -1,0 +1,24 @@
+{% set selectedBlog = blog_by_id(module.blog_field).name %}
+{% set rec_posts = blog_recent_posts(selectedBlog, 200) %}
+
+<div class="jobs-wrapper">
+    {% for rec_post in rec_posts %}
+    <div class="jobs-article">
+        <div class="item">
+            <img src="{{ rec_post.featured_image }}" alt="{{ rec_post.featured_image_alt_text }}">
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-quote-left icon"></i>
+            <p class="quote">
+                {{ rec_post.meta_description }}
+            </p>
+            <p class="author subheadline">
+                Ontwerper {{ rec_post.blog_post_author.display_name }}
+            </p>
+            <a href="{{ rec_post.absolute_url }}" class="btn hs-button">
+                Naar de vacature {{ rec_post.name }}
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,15 +1,22 @@
-.quote::before {
-    content: '"';
-    color: var(--black);
+.quote {
+    width: 100%;
 }
 
 .quote .body {
-    font-family: "Termina", sans-serif;
+    font-family: "Termina", sans-serif!important;
+    color: var(--black);
     font-weight: 700;
+    font-size: 22px!important;
     text-transform: uppercase;
 }
 
 .quote .author {
-    font-family: "Termina", sans-serif;
+    font-family: "Termina", sans-serif!important;
+    color: var(--black);
     text-transform: uppercase;
+}
+
+.quote .icon {
+    color: var(--black);
+    font-size: 76px;
 }

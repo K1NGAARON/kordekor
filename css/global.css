@@ -26,6 +26,7 @@ body {
     font-family: "termina", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 2!important;
 }
 
 h1,
@@ -165,13 +166,13 @@ form input[type=text] {
 .input input::placeholder,
 .input textarea::placeholder,
 .input input:-ms-input-placeholder {
-    color: var(--black);
+    color: var(--black)!important;
     opacity: 1;
 }
 
 .hs-button.primary.large {
     background-color: transparent;
-    color: var(--black);
+    color: var(--black)!important;
     font-size: var(--form-input-size)!important;
     border: none;
     padding: 0;
