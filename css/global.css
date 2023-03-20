@@ -192,16 +192,10 @@ form input:-ms-input-placeholder {
     position: relative;
 }
 
-.header::after,
-.copyright-section::after {
-    content: '';
-    background-color: var(--primary);
-    width: 40px;
-    height: 3px;
-    outline: none;
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    border: none;
-    border-style: unset;
+.copyright-section .hs-menu-wrapper ul {
+    align-items: center!important;
+}
+
+.dnd-section .row-fluid [class*=span] {
+    padding-right: 0!important;
 }
