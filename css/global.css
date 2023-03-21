@@ -10,7 +10,7 @@
 
     --h1-size: 34px;
     --h2-size: 22px;
-    --h3-size: 20px;
+    --h3-size: 18px;
     --p-size: 14px;
     --header-a-size: 14px;
     --subheadline-size: 12px;
@@ -49,6 +49,11 @@ h2 {
 
 h3 {
     font-size: var(--h3-size)!important;
+    text-transform: none!important;
+}
+
+.row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
+    margin-bottom: 40px!important;
 }
 
 p {
@@ -106,9 +111,27 @@ h3,
 }
 
 .hs-button  {
-    text-transform: uppercase;
-    padding: 0;
-    display: 0;
+    text-transform: uppercase!important;
+    text-decoration: none!important;
+    padding: 0!important;
+    display: 0!important;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-wrapper .hs-button.btn {
+    color: var(--black)!important;
+    font-size: var(--subheadline-size)!important;
+    width: fit-content!important;
+    font-family: "termina", sans-serif!important;
+}
+
+.hs-button.btn:hover {
+    cursor: pointer!important;
 }
 
 .hs-button:hover {
@@ -172,6 +195,23 @@ form {
     display: flex!important;
     flex-direction: column!important;
     width: 70%!important;
+}
+
+#hs_form_target_widget_1678383140992 form {
+    margin: 0 auto!important;
+    width: 100%!important;
+}
+
+#hs_form_target_widget_1678383140992 form .hs-form-field:nth-child(odd) {
+    padding-left: 0!important;
+}
+
+#hs_form_target_widget_1678383140992 form .hs-form-field:nth-child(event) {
+    padding-right: 0!important;
+}
+
+#hs_form_target_widget_1678383140992 form .hs-submit {
+    padding-left: 0!important;
 }
 
 form .hs-form-field {
