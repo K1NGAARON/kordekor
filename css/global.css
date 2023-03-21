@@ -251,7 +251,7 @@ form input:-ms-input-placeholder {
     opacity: 1;
 }
 
-.hs-button.primary.large {
+.hs-button {
     font-family: "termina", sans-serif!important;
     background-color: transparent;
     color: var(--black)!important;
