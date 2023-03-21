@@ -110,11 +110,16 @@ h3,
     border: none!important;
 }
 
-.hs-button  {
+.hs-button,
+.hs-button.primary.large,
+.hs-button.primary  {
+    font-family: "Termina", sans-serif!important;
     text-transform: uppercase!important;
     text-decoration: none!important;
     padding: 0!important;
-    display: 0!important;
+    background-color: transparent!important;
+    border: none!important;
+    border-radius: 0!important;
 }
 
 .button-wrapper {
