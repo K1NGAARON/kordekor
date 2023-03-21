@@ -9,12 +9,12 @@
     --transition: all .25s ease-in-out;
 
     --h1-size: 40px;
-    --h2-size: 26px;
+    --h2-size: 22px;
     --h3-size: 20px;
     --p-size: 14px;
     --header-a-size: 14px;
-    --subheadline-size: 14px;
-    --form-input-size: 14px;
+    --subheadline-size: 12px;
+    --form-input-size: 12px;
     --line-height: 1.4;
 }
 
@@ -56,10 +56,12 @@ p {
 }
 
 .subheadline {
+    color: var(--black);
     font-weight: 400;
     font-size: var(--subheadline-size)!important;
     text-transform: uppercase;
-    color: var(--black);
+    margin: 20px 0;
+    width: 60%;
 }
 
 /* ROBOTO */
@@ -149,12 +151,35 @@ h3,
     display: none!important;
 }
 
+.dnd-section .dnd-column>.dnd-row:not(:first-child) {
+    margin-top: 0!important;
+}
+
+form {
+    display: flex!important;
+    flex-direction: column!important;
+    width: 70%!important;
+}
+
+form .hs-form-field {
+    margin-bottom: 0!important;
+}
+
+.button, .medium, .system-page form a#hs_login_reset, body, button, form .hs-button, form input[type=email], form input[type=file], form input[type=number], form input[type=password], form input[type=tel], form input[type=text], form label, form select, form textarea {
+    font-family: "Roboto", sans-serif!important;
+}
+
+form input[type=email], form input[type=file], form input[type=number], form input[type=password], form input[type=tel], form input[type=text], form select, form textarea {
+    border-radius: 0!important;
+    border: none!important;
+}
+
 form input *,
 form input *::placeholder,
 form input::placeholder,
 form textarea::placeholder,
 form input:-ms-input-placeholder {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif!important;
 }
 
 .input *,
@@ -174,6 +199,7 @@ form input:-ms-input-placeholder {
 }
 
 .hs-button.primary.large {
+    font-family: "termina", sans-serif!important;
     background-color: transparent;
     color: var(--black)!important;
     font-size: var(--form-input-size)!important;
@@ -198,4 +224,9 @@ form input:-ms-input-placeholder {
 
 .dnd-section .row-fluid [class*=span] {
     padding-right: 0!important;
+}
+
+.footer-menu__container.dnd-section ul {
+    display: flex;
+    gap: 60px;
 }
