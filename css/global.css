@@ -15,7 +15,7 @@
     --header-a-size: 14px;
     --subheadline-size: 12px;
     --form-input-size: 12px;
-    --line-height: 1.4;
+    --line-height: 1.6;
 }
 
 body {
@@ -158,6 +158,10 @@ h3,
 
 .dnd-section .dnd-column>.dnd-row:not(:first-child) {
     margin-top: 0!important;
+}
+
+form .hs-error-msg {
+    font-size: 12px!important;
 }
 
 .hs_cos_wrapper_type_rich_text>:last-child {
