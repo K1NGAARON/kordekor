@@ -8,7 +8,7 @@
     --grey: #dadada;
     --transition: all .25s ease-in-out;
 
-    --h1-size: 40px;
+    --h1-size: 34px;
     --h2-size: 22px;
     --h3-size: 20px;
     --p-size: 14px;
@@ -53,6 +53,11 @@ h3 {
 
 p {
     font-size: var(--p-size)!important;
+}
+
+.about-sub {
+    width: 80%;
+    margin: 40px auto 0;
 }
 
 .subheadline {
@@ -153,6 +158,10 @@ h3,
 
 .dnd-section .dnd-column>.dnd-row:not(:first-child) {
     margin-top: 0!important;
+}
+
+.hs_cos_wrapper_type_rich_text>:last-child {
+    margin-bottom: 20px!important;
 }
 
 form {
