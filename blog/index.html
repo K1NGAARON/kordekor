@@ -1,0 +1,54 @@
+<!--
+  templateType: blog_post
+  isAvailableForNewContent: true
+  label: Growth - blog post
+  screenshotPath: ../images/template-previews/blog-post.png
+-->
+{% set template_css = "../../css/templates/blog-post.css" %}
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{# Blog post wrapper #}
+
+<div class="content-wrapper">
+
+  {# Blog post #}
+
+  <div class="blog-post-section">
+    <article class="blog-post">
+      <h1>{{ content.name }}</h1>
+      <div class="blog-post__meta">
+        {% module "social_sharing"
+          path="../modules/social-sharing",
+          styles={
+            "spacing": {
+              "spacing": {
+                "margin": {
+                  "bottom": {
+                    "value": 22,
+                    "units": "px"
+                  }
+                }
+              }
+            }
+          }
+        %}
+      </div>
+      <div class="blog-post__body">
+        {{ content.post_body }}
+      </div>
+    </article>
+  </div>
+
+
+  {# Related posts #}
+
+  <div class="blog-post-section">
+    {% module "related_posts"
+      path="../modules/related-posts"
+    %}
+  </div>
+
+</div>
+{% endblock body %}
