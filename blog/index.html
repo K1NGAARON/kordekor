@@ -1,11 +1,22 @@
 <!--
-  templateType: blog_post
-  isAvailableForNewContent: true
-  label: Growth - blog post
-  screenshotPath: ../images/template-previews/blog-post.png
+templateType: blog_post
+isAvailableForNewContent: true
+screenshotPath: ../../assets/images/covers/cover-blog-post.jpg
+label: Blog - Post
 -->
-{% set template_css = "../../css/templates/blog-post.css" %}
-{% extends "./layouts/base.html" %}
+{% extends "../../assets/layouts/base.html" %}
+
+{% set templateClasses = "blog-post" %}
+
+{% if ((request.path is containing "preview/template") && (!content.post_body)) || request.postDict.preview_theme == true %}
+{% set content= { 
+    'title': 'Something powerful',
+    'post_summary': '<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta.</p>',
+    'featured_image': get_asset_url('../../assets/images/visuals/about-visual-2.jpg'),
+    'post_body': '<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta.</p><!--more--><h2>Nulla porttitor accumsan tincidunt.</h2><p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta.</p><blockquote>Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta.</blockquote><h3>Vivamus suscipit tortor eget felis porttitor volutpat.</h3><p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt.</p><ul><li>Curabitur aliquet quam id dui posuere blandit.</li><li>Proin eget tortor risus.</li><li>Vestibulum ante ipsum primis in faucibus orci luctus</li><li>Donec velit neque, auctor sit amet aliquam vel</li></ul><h4>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</h4><p>Donec sollicitudin molestie malesuada. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p><ol><li>Curabitur aliquet quam id dui posuere blandit.</li><li>Proin eget tortor risus.</li><li>Vestibulum ante ipsum primis in faucibus orci luctus</li><li>Donec velit neque, auctor sit amet aliquam vel</li></ol> <h5>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</h5><pre>{"variable": his is some code sample,"another_variable": his is some code sample}</pre><p>Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p><h6>Cras ultricies ligula sed magna dictum porta. </h6><p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.</p>' 
+  }
+%}
+{% endif %}
 
 {% block body %}
 
