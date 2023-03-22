@@ -8,58 +8,68 @@ label: Blog - Post
 
 {% set templateClasses = "blog-post" %}
 
-{% if ((request.path is containing "preview/template") && (!content.post_body)) || request.postDict.preview_theme == true %}
-{% set content= { 
-    'title': 'Something powerful',
-    'post_summary': '<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta.</p>',
-    'featured_image': get_asset_url('../../assets/images/visuals/about-visual-2.jpg'),
-    'post_body': '<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta.</p><!--more--><h2>Nulla porttitor accumsan tincidunt.</h2><p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta.</p><blockquote>Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta.</blockquote><h3>Vivamus suscipit tortor eget felis porttitor volutpat.</h3><p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt.</p><ul><li>Curabitur aliquet quam id dui posuere blandit.</li><li>Proin eget tortor risus.</li><li>Vestibulum ante ipsum primis in faucibus orci luctus</li><li>Donec velit neque, auctor sit amet aliquam vel</li></ul><h4>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</h4><p>Donec sollicitudin molestie malesuada. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p><ol><li>Curabitur aliquet quam id dui posuere blandit.</li><li>Proin eget tortor risus.</li><li>Vestibulum ante ipsum primis in faucibus orci luctus</li><li>Donec velit neque, auctor sit amet aliquam vel</li></ol> <h5>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</h5><pre>{"variable": his is some code sample,"another_variable": his is some code sample}</pre><p>Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p><h6>Cras ultricies ligula sed magna dictum porta. </h6><p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.</p>' 
-  }
-%}
-{% endif %}
+
 
 {% block body %}
 
 {# Blog post wrapper #}
 
 <div class="content-wrapper">
-
-  {# Blog post #}
-
   <div class="blog-post-section">
     <article class="blog-post">
-      <h1>{{ content.name }}</h1>
-      <div class="blog-post__meta">
-        {% module "social_sharing"
-          path="../modules/social-sharing",
-          styles={
-            "spacing": {
-              "spacing": {
-                "margin": {
-                  "bottom": {
-                    "value": 22,
-                    "units": "px"
-                  }
-                }
-              }
-            }
-          }
-        %}
-      </div>
+      
       <div class="blog-post__body">
-        {{ content.post_body }}
+        <div class="row flex-col center">
+            <h1>{{ content.title }}</h1>
+            <p class="subheadline">
+                {{ content.blog_post_author.display_name }}
+            </p>
+            {% module "module_16795134877143" path="/Aesthetics copy/modules/Blog Text", label="Blog Text" %}
+        </div>
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+                {% module "module_16795135568074" path="/Aesthetics copy/modules/Blog Image", label="Blog Image" %}
+            </div>
+        </div>
+
+        <div class="row" style="display: flex;">
+            <div class="col">
+                {% module "module_167951385449814" path="/Aesthetics copy/modules/Blog Image 2", label="Blog Image 2" %}
+            </div>
+            <div class="col">
+                {% module "module_167951386395115" path="/Aesthetics copy/modules/Blog Image 3", label="Blog Image 3" %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                {% module "module_167951418132021" path="/Aesthetics copy/modules/Blog Mid Title", label="Blog Mid Title" %}
+            </div>
+            <div class="col">
+                {% module "module_167951422360125" path="/Aesthetics copy/modules/Blog Mid Body", label="Blog Mid Body" %}
+            </div>
+        </div>
+
+        <div class="row flex-col center">
+            {% module "module_167951426150928" path="/Aesthetics copy/modules/Blog Image 4", label="Blog Image 4" %}
+        </div>
+
+        <div class="row flex-col quote">
+            {% module "module_167951429900031" path="/Aesthetics copy/modules/Blog Quote Module", label="Blog Quote Module" %}
+        </div>
+
+
+
+
+
       </div>
+      
     </article>
   </div>
 
-
-  {# Related posts #}
-
-  <div class="blog-post-section">
-    {% module "related_posts"
-      path="../modules/related-posts"
-    %}
-  </div>
 
 </div>
 {% endblock body %}
