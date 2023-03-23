@@ -377,9 +377,6 @@ form input:-ms-input-placeholder {
     font-size: var(--subheadline-size)!important;
 }
 
-.blog-post-section {
-
-}
 
 
 @media (min-width: 600px) {
