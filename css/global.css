@@ -316,6 +316,10 @@ form input:-ms-input-placeholder {
     flex-direction: column;
 }
 
+.blog-post-section h1 {
+    text-align: center!important;
+}
+
 .blog-post-section .subheadline {
     width: 100%;
     margin: 20px auto;
@@ -333,6 +337,12 @@ form input:-ms-input-placeholder {
 
 .blog-post-section .row .col.flex-end {
     justify-content: flex-end;
+}
+
+.blog-post-section .row .col.flex-start .subheadline {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 18px!important;
 }
 
 .blog-post-section .row.offer .subheadline {
