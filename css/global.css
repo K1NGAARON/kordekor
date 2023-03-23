@@ -339,6 +339,7 @@ form input:-ms-input-placeholder {
 .blog-post-section .row.contact .subheadline {
     text-align: left;
     width: 60%;
+    margin: 20px 0;
 }
 
 .blog-post-section .row.filter .col:nth-of-type(1) {
