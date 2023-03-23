@@ -1,0 +1,14 @@
+.wrapper.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper.filter .item {
+    flex: 1 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary);
+}
