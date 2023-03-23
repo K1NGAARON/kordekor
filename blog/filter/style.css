@@ -10,5 +10,45 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--primary);
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--black);
+}
+
+.wrapper.filter .item .number {
+    font-family: "termina", sans-serif!important;
+    font-weight: 700!important;
+    font-size: 26px!important;
+    color: var(--black)!important;
+    margin-bottom: 0!important;
+}
+
+.wrapper.filter .item .subheadline {
+    text-align: left;
+    font-size: 10px!important;
+    width: 100%;
+    margin: 0;
+}
+
+.wrapper.filter .item .child:nth-child(1) {
+    flex: 1 0 15%;
+}
+
+.wrapper.filter .item .child:nth-child(2) {
+    flex: 1 0 60%;
+}
+
+.wrapper.filter .item .child:nth-child(3) {
+    flex: 1 0 15%;
+}
+
+.wrapper.filter .item .box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--black);
+    color: transparent;
+}
+
+.wrapper.filter .item .box.active {
+    background-color: var(--primary);
 }
