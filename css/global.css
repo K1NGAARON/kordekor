@@ -379,6 +379,102 @@ form input:-ms-input-placeholder {
 }
 
 
+@media (max-width: 560px) {
+    :root {
+        --h1-size: 26px;
+        --h2-size: 18px;
+    }
+
+    form {
+        width: 100%!important;
+    }
+
+    .subheadline {
+        width: 100%!important;
+    }
+
+    .row-fluid #hs_cos_wrapper_widget_1678987524717,
+    .row-fluid #hs_cos_wrapper_widget_1678031590564 {
+        padding-right: 0!important;
+    }
+
+    .widget-type-custom_widget.widget_1679850737854-flexbox-positioning.dnd-module {
+        align-items: flex-start!important;
+    }
+
+    .dnd-section .row-fluid [class*=span] {
+        padding-right: 25px!important;
+    }
+
+    .row-fluid form .hs-form-field {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .footer-menu__container.dnd-section ul {
+        flex-flow: row;
+        gap: 20px;
+    }
+
+    .hs-menu-wrapper > ul > li {
+        flex: 1 0;
+    }
+
+    .hs-menu-wrapper ul li:nth-of-type(1),
+    .hs-menu-wrapper ul li:nth-of-type(2) {
+        flex: 2 0;
+    }
+
+    .hs-menu-wrapper ul li:nth-of-type(3) {
+        width: 20px;
+    }
+
+    .row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
+        margin-bottom: 0!important;
+    }
+
+    #hs_cos_wrapper_widget_1678130238925_ h2 {
+        padding-right: 0!important;
+    }
+
+    #hs_cos_wrapper_module_1678130364085_ p {
+        padding-right: 0!important;
+    }
+
+    #hs_cos_wrapper_widget_1678129822368_ h2 {
+        padding-right: 0!important;
+    }
+
+    #hs_cos_wrapper_module_1678129913395_ p {
+        padding-right: 0!important;
+    }
+
+    .dnd-section .dnd-row > .row-fluid {
+        width: 100%!important;
+    }
+
+    .dnd-section .row-fluid [class*=span] {
+        padding-right: 0!important;
+    }
+
+    .row-fluid #hs_cos_wrapper_widget_1678130291280 {
+        padding-left: 0!important;
+    }
+
+    .row-fluid #hs_cos_wrapper_widget_1678129951469 {
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+
+    .row-fluid-wrapper.row-depth-1.row-number-1.dnd-row.cell_16780312870692-row-4-vertical-alignment .row-fluid:nth-of-type(1) {
+        padding-left: 15px!important;
+    }
+
+    .row-fluid #hs_cos_wrapper_widget_1678130606129 {
+        padding-right: 0!important;
+    }
+}
+
 
 @media (min-width: 600px) {
     .blog-post-section .row {
