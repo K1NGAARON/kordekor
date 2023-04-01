@@ -1,0 +1,293 @@
+<!--
+templateType: blog_listing
+isAvailableForNewContent: true
+screenshotPath: ../../assets/images/covers/cover-blog-listing.jpg
+label: Blog - Listing
+-->
+{% extends "../../assets/layouts/base.html" %}
+
+{% block body %}
+{% dnd_area "blog-listing-area" label="Blog listing area" class="blog-listing" %}
+
+<!-- Begin hero section -->
+{% dnd_section vertical_alignment="MIDDLE" %}
+{% dnd_column width="5" %}
+{% dnd_row %}
+{% dnd_module 
+  path='../../modules/blog/blog-listing-hero' 
+  style={
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 150,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'right'
+        },
+        'lg': {
+          'top_spacing': 100,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'right'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 50,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'right'
+        }
+      }
+%}
+{% module_attribute "html" %}
+{{ context.text_image_title.content }}
+{% end_module_attribute %}
+{% end_dnd_module %}
+{% end_dnd_row %}
+{% dnd_row %}
+{% dnd_module 
+  path='../../modules/pages/anchor'
+  anchor_type="image",
+  image_field={ 'src' : get_asset_url('../../assets/images/icons/arrow-down.svg') },
+  style={
+    'xs': {
+      'top_spacing': 0,
+      'bottom_spacing': 0,
+      'left_spacing': 0,
+      'right_spacing': 0,
+      'text_alignment': 'center',
+      'anchor_settings': {
+        'width': 78,
+        'height': 78,
+        'top_spacing': 20,
+        'bottom_spacing': 20,
+        'left_spacing': 20,
+        'right_spacing': 20,
+        'border_radius': 78,
+        'border_width': 3,
+        'color_field': {'color': "#253543", 'opacity': 100 },
+        'border_color': {'color': "#253543", 'opacity': 100 }
+      },
+    },
+    'sm': {
+      'top_spacing': 0,
+      'bottom_spacing': 0,
+      'left_spacing': 0,
+      'right_spacing': 0,
+      'text_alignment': 'center',
+      'anchor_settings': {
+        'width': 78,
+        'height': 78,
+        'top_spacing': 20,
+        'bottom_spacing': 20,
+        'left_spacing': 20,
+        'right_spacing': 20,
+        'border_radius': 78,
+        'border_width': 3,
+        'color_field': {'color': "#253543", 'opacity': 100 },
+        'border_color': {'color': "#253543", 'opacity': 100 }
+      },
+    },
+    'md': {
+      'top_spacing': 0,
+      'bottom_spacing': 0,
+      'left_spacing': 0,
+      'right_spacing': 0,
+      'text_alignment': 'left',
+      'anchor_settings': {
+        'width': 78,
+        'height': 78,
+        'top_spacing': 20,
+        'bottom_spacing': 20,
+        'left_spacing': 20,
+        'right_spacing': 20,
+        'border_radius': 78,
+        'border_width': 3,
+        'color_field': {'color': "#253543", 'opacity': 100 },
+        'border_color': {'color': "#253543", 'opacity': 100 }
+      }
+    },
+    'lg': {
+      'top_spacing': 0,
+      'bottom_spacing': 0,
+      'left_spacing': 0,
+      'right_spacing': 0,
+      'text_alignment': 'left',
+      'anchor_settings': {
+        'width': 78,
+        'height': 78,
+        'top_spacing': 20,
+        'bottom_spacing': 20,
+        'left_spacing': 20,
+        'right_spacing': 20,
+        'border_radius': 78,
+        'border_width': 3,
+        'color_field': {'color': "#253543", 'opacity': 100 },
+        'border_color': {'color': "#253543", 'opacity': 100 }
+      }
+    },
+    'xl': {
+      'top_spacing': 0,
+      'bottom_spacing': 0,
+      'left_spacing': 0,
+      'right_spacing': 0,
+      'text_alignment': 'left',
+      'anchor_settings': {
+        'width': 78,
+        'height': 78,
+        'top_spacing': 20,
+        'bottom_spacing': 20,
+        'left_spacing': 20,
+        'right_spacing': 20,
+        'border_radius': 78,
+        'border_width': 3,
+        'color_field': {'color': "#253543", 'opacity': 100 },
+        'border_color': {'color': "#253543", 'opacity': 100 }
+      }
+    }
+  }
+%}
+{% end_dnd_module %}
+{% end_dnd_row %}
+{% end_dnd_column %}
+{% dnd_column width="6", offset="6" %}
+{% dnd_row %}
+{% dnd_module 
+    path='../../modules/pages/blog-listing-image-with-shapes' 
+    image_field={ 'src' : content.featured_image ? content.featured_image : get_asset_url('../../assets/images/visuals/visual-1.jpg') },
+    style={
+      'revert_display': True,
+      'shapes_display': "display_three",
+      'first_shape_color': { 'color' : theme.global_colors.second_accent.color, 'opacity' : 100 },
+      'second_shape_color': { 'color' : theme.global_colors.fifth.color, 'opacity' : 100 }
+    }
+    %}
+{% end_dnd_module %}
+{% end_dnd_row %}
+{% end_dnd_column %}
+{% end_dnd_section %}
+<!-- End hero section -->
+
+<!-- Begin posts section -->
+{% include_dnd_partial 
+  path='../../sections/blog-listing-section.html'
+  context={
+    "display_posts_date": true, 
+    "date_text": "on", 
+    "display_posts_author": true,
+    "author_text": "By",
+    "blog_posts_per_row": 3,
+    "truncate_blog_posts_summaries": 120,
+    "fallback_image":  { 'src': get_asset_url('../../assets/images/visuals/artwork-visual-1.jpg') },
+    "button": {
+      "text": "Read more", 
+      "show_arrow": true
+    },
+    'style': {
+      "add_posts_box_shadow": false,
+      "posts_border_color": "none",
+      "posts_title_color": "black",
+      "posts_background_color": "white",
+      "posts_border_radius": "rounded-large",
+      "posts_image_format": "sixteen-nine",
+      "posts_image_border_radius": "rounded-large",
+      "image_background_color": "none",
+      "posts_spacing": 0,
+      "posts_text_spacing": 0,
+      "posts_image_bottom_spacing": 20,
+      "button": {
+        "color": "first", 
+        "background_color": "no",
+        "hover_color": "black",
+        "hover_background_color": "no",
+        "border_color": "no",
+        "hover_border_color": "no"
+      }
+    }
+  }
+  %}
+<!-- End pagination section -->
+
+<!-- Begin CTA section -->
+{% include_dnd_partial 
+  path='../../sections/cta-section.html'
+  context={
+    'cta_section_description': {
+      'content': '<h2>want a<br><strong>sneak peak?</strong></h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>',
+      'style': {
+        'xs': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'sm': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'md': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'lg': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        },
+        'xl': {
+          'top_spacing': 0,
+          'bottom_spacing': 0,
+          'left_spacing': 0,
+          'right_spacing': 0,
+          'text_alignment': 'center'
+        }
+      },
+    },
+    'cta_section_buttons': {
+      "button": [
+        {
+          'text': 'contact us',
+          'color': 'default',
+          'hover_color': 'default',
+          'background_color': 'first',
+          'hover_background_color': 'black',
+          'border_color': 'first',
+          'hover_border_color': 'black'
+        }
+      ],
+      'style': {
+        'mobile_horizontal_alignment': "justify-content-center",
+        'small_tablet_horizontal_alignment': "justify-content-sm-center",
+        'large_tablet_horizontal_alignment': "justify-content-md-center",
+        'small_desktop_horizontal_alignment': "justify-content-lg-center",
+        'large_desktop_horizontal_alignment': "justify-content-xl-center"
+      }
+    }
+  }
+%}
+<!-- End CTA section -->
+{% end_dnd_area %}
+{% endblock body %}
