@@ -204,6 +204,12 @@ form {
     width: 70%!important;
 }
 
+form legend {
+    font-family: "roboto", sans-serif!important;
+    color: var(--black)!important;
+    font-size: var(--p-size)!important;
+}
+
 #hs_form_target_widget_1678383140992 form {
     margin: 0 auto!important;
     width: 100%!important;
@@ -377,6 +383,7 @@ form input:-ms-input-placeholder {
     text-transform: uppercase!important;
     font-size: var(--subheadline-size)!important;
 }
+
 
 
 @media (max-width: 560px) {
