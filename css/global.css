@@ -248,6 +248,16 @@ form input:-ms-input-placeholder {
     font-family: "Roboto", sans-serif!important;
 }
 
+.contact-form-wrapper .input *,
+.contact-form-wrapper .input *::placeholder,
+.contact-form-wrapper input[type=text],
+.contact-form-wrapper input[type=text]::placeholder,
+.contact-form-wrapper textarea::placeholder {
+    font-size: var(--form-input-size)!important;
+    color: var(--black)!important;
+    font-family: "Roboto", sans-serif!important;
+}
+
 .input *,
 .input *::placeholder,
 form input[type=text],
@@ -264,6 +274,7 @@ form input:-ms-input-placeholder {
     opacity: 1;
 }
 
+.contact-form-wrapper .hs-button,
 .hs-button {
     font-family: "termina", sans-serif!important;
     background-color: transparent;
@@ -274,6 +285,7 @@ form input:-ms-input-placeholder {
     border-radius: 0;
 }
 
+.contact-form-wrapper .hs-button.primary.large:hover,
 .hs-button.primary.large:hover {
     background-color: var(--primary)!important;
     border: none;
