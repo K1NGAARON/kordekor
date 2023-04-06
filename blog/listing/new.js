@@ -33,5 +33,6 @@ $(document).ready(function() {
     $(document).ready(function() {
       const stories = document.querySelectorAll('.kordekor-stories');
       $(stories).hide();
+      $('li[data-tag="kordekor-stories"]').hide();
     });
-  });  
+});  
