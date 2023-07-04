@@ -52,6 +52,15 @@ h3 {
     text-transform: none!important;
 }
 
+.widget-span .cell_16826850400422-row-0-padding,
+.widget-span .cell_16826852936173-row-0-padding {
+  padding-right: 17px!important;
+}
+
+.row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
+    padding-right: 0!important;
+}
+
 .row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
     margin-bottom: 40px!important;
 }
