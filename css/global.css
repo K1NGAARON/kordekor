@@ -186,7 +186,11 @@ h3,
 .header .hs-menu-wrapper ul li.hs-menu-item.active-branch > a,
 .header .hs-menu-wrapper ul li a:hover {
     font-family: "Roboto", sans-serif!important;
-    color: #425b76!important;
+    /* color: #425b76!important; */
+}
+
+.header .hs-menu-wrapper ul li.hs-menu-item.active-branch>a {
+    font-weight: 400!important;
 }
 
 .span12.columns.d-flex.flex-flow-column.flex-flow-md-row-wrap.align-items-md-center.fh {
