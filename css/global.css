@@ -52,15 +52,6 @@ h3 {
     text-transform: none!important;
 }
 
-.widget-span .cell_16826850400422-row-0-padding,
-.widget-span .cell_16826852936173-row-0-padding {
-  padding-right: 17px!important;
-}
-
-.row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
-    padding-right: 0!important;
-}
-
 .row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
     margin-bottom: 40px!important;
 }
@@ -72,6 +63,76 @@ p {
 .author a, .hs_cos_wrapper_type_rich_text a, p a {
   font-family: "Roboto", sans-serif!important;
   color: var(--black)!important;
+}
+
+/* HAMBURGER MENU */
+@import url("https://use.typekit.net/zdv0evm.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap');
+
+.modal-container {
+    display: none;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 70%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal-container .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.modal-container .modal-content .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.modal-container .modal-content .nav-item {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Termina;
+    font-size: 16px;
+}
+
+.modal-container .modal-content .nav-item.small-nav-item {
+    opacity: 0.8;
+    text-transform: none;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.modal-container .close-icon {
+    color: var(--white);
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.modal-container .close-icon:hover {
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-family: 'FontAwesome'!important;
+    font-size: 20px;
+}
+
+.hamburger-icon:hover {
+    cursor: pointer;
 }
 
 .about-sub {
@@ -527,6 +588,15 @@ form input:-ms-input-placeholder {
     }
 
     .row-fluid #hs_cos_wrapper_widget_1678130606129 {
+        padding-right: 0!important;
+    }
+
+    .widget-span .cell_16826850400422-row-0-padding,
+    .widget-span .cell_16826852936173-row-0-padding {
+    padding-right: 17px!important;
+    }
+
+    .row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
         padding-right: 0!important;
     }
 }
