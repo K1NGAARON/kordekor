@@ -33,7 +33,7 @@ h1,
 h2,
 h3 {
     color: var(--black)!important;
-    font-weight: 700!important;
+    font-weight: 500!important;
     text-transform: uppercase!important;
     line-height: var(--line-height)!important;
     margin: 20px 0 0 0!important;
@@ -58,6 +58,11 @@ h3 {
 
 p {
     font-size: var(--p-size)!important;
+}
+
+.author a, .hs_cos_wrapper_type_rich_text a, p a {
+  font-family: "Roboto", sans-serif!important;
+  color: var(--black)!important;
 }
 
 .about-sub {
@@ -91,12 +96,15 @@ h3,
     font-family: "termina", sans-serif!important;
 }
 
+.header .hs-menu-wrapper ul li a {
+    color: var(--black)!important;
+}
 
 .copyright-section .hs-menu-wrapper ul li a,
 .header .hs-menu-wrapper ul li.hs-menu-item.active-branch > a,
 .header .hs-menu-wrapper ul li a:hover {
     font-family: "Roboto", sans-serif!important;
-    color: var(--black)!important;
+    color: #425b76!important;
 }
 
 .span12.columns.d-flex.flex-flow-column.flex-flow-md-row-wrap.align-items-md-center.fh {
@@ -115,7 +123,7 @@ h3,
 .hs-button.primary  {
     font-family: "Termina", sans-serif!important;
     text-transform: uppercase!important;
-    text-decoration: none!important;
+    text-decoration: underline!important;
     padding: 0!important;
     background-color: transparent!important;
     border: none!important;
