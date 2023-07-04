@@ -73,12 +73,13 @@ p {
     display: none;
     flex-direction: column;
     background-color: var(--black);
-    width: 70%;
+    width: 85%;
     height: fit-content;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+    z-index: 999;
 }
 
 .modal-container.active {
@@ -94,7 +95,7 @@ p {
 }
 
 .modal-container .modal-content .logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-bottom: 40px;
 }
@@ -105,6 +106,12 @@ p {
     text-transform: uppercase;
     font-family: Termina;
     font-size: 16px;
+    transition: 0.5s;
+}
+
+.modal-container .modal-content .nav-item:hover {
+    transition: 0.5s;
+    opacity: 0.8;
 }
 
 .modal-container .modal-content .nav-item.small-nav-item {
@@ -114,11 +121,16 @@ p {
     font-size: 12px;
 }
 
+.modal-container .modal-content .nav-item.small-nav-item:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
 .modal-container .close-icon {
     color: var(--white);
-    font-size: 30px;
+    font-size: 24px;
     position: absolute;
-    top: 30px;
+    top: 15px;
     right: 30px;
 }
 
@@ -500,6 +512,23 @@ form input:-ms-input-placeholder {
     :root {
         --h1-size: 26px;
         --h2-size: 18px;
+    }
+
+    .header-menu.d-flex.flex-flow-row-wrap.align-items-center {
+        position: absolute;
+        right: 30px;
+    }
+
+    .header .header-menu.open .header-menu__toggle {
+        transform: none!important;
+    }
+
+    .header-menu__menu {
+        display: none!important;
+    }
+
+    .header .header-menu .header-menu__container {
+        display: none!important;
     }
 
     form {
