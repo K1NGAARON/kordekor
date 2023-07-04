@@ -123,11 +123,17 @@ h3,
 .hs-button.primary  {
     font-family: "Termina", sans-serif!important;
     text-transform: uppercase!important;
-    text-decoration: underline!important;
-    padding: 0!important;
+    /* text-decoration: underline!important; */
+    /* padding: 0!important; */
     background-color: transparent!important;
-    border: none!important;
+    /* border: none!important; */
     border-radius: 0!important;
+
+    padding: 5px!important;
+    width: fit-content!important;
+    color: var(--black)!important;
+    border: 1px solid var(--black)!important;
+    transition: var(--transition);
 }
 
 .button-wrapper {
@@ -145,10 +151,16 @@ h3,
 
 .hs-button.btn:hover {
     cursor: pointer!important;
+    transition: var(--transition);
+    color: var(--white)!important;
+    background-color: var(--black)!important;
 }
 
 .hs-button:hover {
-    background-color: var(--primary)!important;
+    /* background-color: var(--primary)!important; */
+    transition: var(--transition);
+    color: var(--white)!important;
+    background-color: var(--black)!important;
 }
 
 .btn.ghost-btn {
@@ -295,8 +307,9 @@ form input:-ms-input-placeholder {
 
 .contact-form-wrapper .hs-button.primary.large:hover,
 .hs-button.primary.large:hover {
-    background-color: var(--primary)!important;
-    border: none;
+    color: var(--white)!important;
+    background-color: var(--black)!important;
+    /* border: none; */
 }
 
 .header,

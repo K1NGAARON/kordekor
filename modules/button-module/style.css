@@ -1,0 +1,25 @@
+.btn {
+    display: block;
+    font-family: "Termina", sans-serif!important;
+    font-size: 12px!important;
+    text-transform: uppercase!important;
+    /* text-decoration: underline!important; */
+    /* padding: 0!important; */
+    background-color: transparent!important;
+    border-radius: 0!important;
+    width: fit-content!important;
+    transition: var(--transition);
+    color: var(--black)!important;
+}
+
+.btn div {
+    padding: 5px!important;
+    width: fit-content!important;
+    border: 1px solid var(--black)!important;
+}
+
+.btn:hover div {
+    transition: var(--transition);
+    color: var(--white)!important;
+    background-color: var(--black)!important;
+}
