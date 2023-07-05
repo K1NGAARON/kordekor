@@ -1,0 +1,371 @@
+@import url("https://use.typekit.net/zdv0evm.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap');
+
+:root {
+    --primary: #FFFF29;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #dadada;
+    --transition: all .25s ease-in-out;
+
+    --h1-size: 34px;
+    --h2-size: 22px;
+    --h3-size: 18px;
+    --p-size: 14px;
+    --header-a-size: 14px;
+    --subheadline-size: 12px;
+    --form-input-size: 12px;
+    --line-height: 1.6;
+}
+
+body {
+    background-color: #EAEAEA!important;
+}
+
+* {
+    font-family: "termina", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2!important;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--black)!important;
+    font-weight: 500!important;
+    text-transform: uppercase!important;
+    line-height: var(--line-height)!important;
+    margin: 20px 0 0 0!important;
+}
+
+h1 {
+    font-size: var(--h1-size)!important;
+}
+
+h2 {
+    font-size: var(--h2-size)!important;
+}
+
+h3 {
+    font-size: var(--h3-size)!important;
+    text-transform: none!important;
+}
+
+.row-fluid .hs_cos_wrapper_type_rich_text>:last-child {
+    margin-bottom: 40px!important;
+}
+
+p {
+    font-size: var(--p-size)!important;
+}
+
+.author a,
+.hs_cos_wrapper_type_rich_text a,
+p a {
+    font-family: "Roboto", sans-serif!important;
+    color: var(--black)!important;
+}
+
+/* HAMBURGER MENU */
+@import url("https://use.typekit.net/zdv0evm.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap');
+
+.modal-container {
+    display: none;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 85%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 999;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal-container .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    position: relative;
+}
+
+.modal-container .modal-content .logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.modal-container .modal-content .nav-item {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Termina;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.modal-container .modal-content .nav-item:hover {
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.modal-container .modal-content .nav-item.small-nav-item {
+    opacity: 0.8;
+    text-transform: none;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.modal-container .modal-content .nav-item.small-nav-item:hover {
+    transition: 0.5s;
+   opacity: 1;
+}
+
+.modal-container .close-icon {
+    color: var(--white);
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.modal-container .close-icon:hover {
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-family: 'FontAwesome'!important;
+    font-size: 20px;
+}
+
+.hamburger-icon:hover {
+    cursor: pointer;
+}
+
+.about-sub {
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+.subheadline {
+    color: var(--black);
+    font-weight: 400;
+    font-size: var(--subheadline-size)!important;
+    text-transform: uppercase;
+    margin: 20px 0;
+    width: 60%;
+}
+
+/* ROBOTO */
+p,
+.copyright-section .hs-menu-wrapper ul li a,
+.header .hs-menu-wrapper ul li a,
+.hs-button.primary.large {
+    font-family: "Roboto", sans-serif!important;
+}
+
+/* TERMINA */
+h1,
+h2,
+h3,
+.subheadline {
+    font-family: "termina", sans-serif!important;
+}
+
+.header .hs-menu-wrapper ul li a {
+    color: var(--black)!important;
+}
+
+.header .hs-menu-wrapper ul li.hs-menu-item.active-branch > a {
+    font-weight: 400!important;
+}
+
+.span12.columns.d-flex.flex-flow-column.flex-flow-md-row-wrap.align-items-md-center.fh {
+    justify-content: flex-end!important;
+}
+
+.header,
+.footer-section,
+.copyright-section {
+    background-color: #EAEAEA!important;
+    border: none!important;
+}
+
+.hs-button,
+.hs-button.primary.large,
+.hs-button.primary {
+    font-family: "Termina", sans-serif!important;
+    text-transform: uppercase!important;
+    background-color: transparent!important;
+    border-radius: 0!important;
+    padding: 5px!important;
+    width: fit-content!important;
+    color: var(--black)!important;
+    border: 1px solid var(--black)!important;
+    transition: var(--transition);
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-wrapper .hs-button.btn {
+    color: var(--black)!important;
+    font-size: var(--subheadline-size)!important;
+    width: fit-content!important;
+    font-family: "termina", sans-serif!important;
+}
+
+.hs-button.btn:hover {
+    cursor: pointer!important;
+    transition: var(--transition);
+    color: var(--white)!important;
+    background-color: var(--black)!important;
+}
+
+.hs-button:hover {
+    transition: var(--transition);
+    color: var(--white)!important;
+    background-color: var(--black)!important;
+}
+
+.btn.ghost-btn {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+    transition: var(--transition);
+}
+
+.btn.ghost-btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+    transition: var(--transition);
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+    align-content: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header .hs-menu-wrapper ul li a {
+    font-size: var(--header-a-size)!important;
+}
+
+.header .hs-menu-wrapper ul li.hs-menu-item-branch > a {
+    color: #959595;
+}
+
+.header .hs-menu-wrapper ul li.hs-menu-item.active-branch > a::after {
+    display: none!important;
+}
+
+.dnd-section .dnd-column > .dnd-row:not(:first-child) {
+    margin-top: 0!important;
+}
+
+form .hs-error-msg,
+form label {
+    font-size: 12px!important;
+    font-family: Roboto, sans-serif!important;
+}
+
+.hs_cos_wrapper_type_rich_text > :last-child {
+    margin-bottom: 20px!important;
+}
+
+form {
+    display: flex!important;
+    flex-direction: column!important;
+    width: 70%!important;
+}
+
+form legend {
+    font-family: "roboto", sans-serif!important;
+    color: var(--black)!important;
+    font-size: var(--p-size)!important;
+}
+
+#hs_form_target_widget_1678383140992 form {
+    margin: 0 auto!important;
+    width: 100%!important;
+}
+
+#hs_form_target_widget_1678383140992 form .hs-form-field:nth-child(odd) {
+    padding-left: 0!important;
+}
+
+#hs_form_target_widget_1678383140992 form .hs-form-field:nth-child(event) {
+    padding-right: 0!important;
+}
+
+#hs_form_target_widget_1678383140992 form .hs-submit {
+    padding-left: 0!important;
+}
+
+form .hs-form-field {
+    margin-bottom: 0!important;
+}
+
+.button,
+.medium,
+.system-page form a#hs_login_reset,
+body,
+button,
+form .hs-button,
+form input[type=email],
+form input[type=file],
+form input[type=number],
+form input[type=password],
+form input[type=tel],
+form input[type=text],
+form label,
+form select,
+form textarea {
+    font-family: "Roboto", sans-serif!important;
+}
+
+form input[type=email],
+form input[type=file],
+form input[type=number],
+form input[type=password],
+form input[type=tel],
+form input[type=text],
+form select,
+form textarea {
+    border-radius: 0!important;
+    border: none!important;
+}
+
+form input *,
+form input *::placeholder,
+form input *::-webkit-input-placeholder,
+form input *:-moz-placeholder,
+form input *::-moz-placeholder,
+form input *:-ms-input-placeholder,
+form textarea *,
+form textarea *::placeholder,
+form textarea *::-webkit-input-placeholder,
+form textarea *:-moz-placeholder,
+form textarea *::-moz-placeholder,
+form textarea *:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif!important;
+}
