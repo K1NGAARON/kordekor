@@ -11,18 +11,22 @@ function addModalContainer() {
     header.insertAdjacentHTML('beforeend', hamburgerMenu);
   }
   
+  let headerHolder = document.querySelector('#header');
+
   function openModal(e) {
     e.preventDefault();
+    $(headerHolder).hide();
     modalContainer.classList.add('active');
   }
   
   function closeModal() {
+    $(headerHolder).show();
     modalContainer.classList.remove('active');
   }
   
   function addClassOnEscape(event) {
     if (event.key === 'Escape') {
-        closeModal();
+      closeModal();
     }
   }
   
@@ -42,4 +46,4 @@ function addModalContainer() {
     closeIcon.addEventListener('click', closeModal);
   
     document.addEventListener('keydown', addClassOnEscape);
-});  
+});
