@@ -20,24 +20,29 @@ function scrollToTop() {
     });
 }
 
+function removeOpenClass() {
+    const oldHeaderMenu = document.querySelector('.header-menu');
+
+    $(oldHeaderMenu).removeClass('open');
+}
+
 // Function to open the modal
 function openModal(e) {
-    e.preventDefault();
+    // e.preventDefault();
     scrollToTop();
 
     $(headerHolder).hide(); // Hide header holder
     modalContainer.classList.add('active');
-}
 
-function removeOpenClass() {
-    $('.header-menu').removeClass('Open');
+    removeOpenClass();
 }
 
 // Function to close the modal
 function closeModal() {
     $(headerHolder).show(); // Show header holder
-    // modalContainer.classList.remove('active');
-    $(modalContainer).hide();
+    modalContainer.classList.remove('active');
+
+    removeOpenClass();
 }
 
 // Function to add class on Escape key press
@@ -66,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add event listeners
     showIcon.addEventListener('click', function() {
         openModal();
-        removeOpenClass();
     });
     
     showIconSM.addEventListener('click', openModal);

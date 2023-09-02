@@ -193,6 +193,10 @@ body .modal-container .modal-content .nav-item.small-nav-item {
     padding: 0 !important;
 }
 
+#showMenu {
+    width: 20px!important;
+}
+
 /* ROBOTO */
 /* Apply Roboto font to specific elements */
 p,
