@@ -23,7 +23,7 @@ body {
 }
 
 * {
-    font-family: "termina", sans-serif;
+    font-family: termina, sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 2!important;
@@ -113,7 +113,7 @@ body .modal-container .modal-content .nav-item {
     color: white!important;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Termina' ,sans-serif!important;
+    font-family: termina ,sans-serif!important;
     font-size: 16px;
     transition: 0.5s;
 }
@@ -186,12 +186,12 @@ p,
   color: var(--black)!important;
 }
 
-/* TERMINA */
+/* termina */
 h1,
 h2,
 h3,
 .subheadline {
-    font-family: "termina", sans-serif!important;
+    font-family: termina, sans-serif!important;
 }
 
 .header .hs-menu-wrapper ul li a {
@@ -216,7 +216,7 @@ h3,
 .hs-button,
 .hs-button.primary.large,
 .hs-button.primary {
-    font-family: "Termina", sans-serif!important;
+    font-family: termina, sans-serif!important;
     font-size: 14px!important;
     text-transform: uppercase!important;
     background-color: transparent!important;
@@ -238,7 +238,7 @@ h3,
     color: var(--black)!important;
     font-size: var(--subheadline-size)!important;
     width: fit-content!important;
-    font-family: "termina", sans-serif!important;
+    font-family: termina, sans-serif!important;
     text-decoration: none;
 }
 

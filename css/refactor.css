@@ -28,7 +28,7 @@ body {
 
 /* Global font styles */
 * {
-    font-family: "termina", sans-serif;
+    font-family: termina, sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 2 !important;
@@ -39,7 +39,7 @@ h1,
 h2,
 h3 {
     color: var(--black) !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     text-transform: uppercase !important;
     line-height: var(--line-height) !important;
     margin: 20px 0 0 0 !important;
@@ -68,6 +68,7 @@ h3 {
 p {
     font-family: 'Roboto', sans-serif !important;
     font-size: var(--p-size) !important;
+    color: var(--black)!important;
     font-weight: 400;
     font-style: normal;
 }
@@ -80,10 +81,6 @@ p a {
 }
 
 /* HAMBURGER MENU */
-/* Import fonts */
-@import url("https://use.typekit.net/zdv0evm.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap');
-
 /* Menu button styles */
 #showMenu:hover {
     cursor: pointer;
@@ -128,7 +125,7 @@ body .modal-container .modal-content .nav-item {
     color: white !important;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Termina', sans-serif !important;
+    font-family: termina, sans-serif !important;
     font-size: 16px;
     transition: 0.5s;
 }
@@ -210,13 +207,13 @@ p,
     color: var(--black) !important;
 }
 
-/* TERMINA */
-/* Apply Termina font to specific elements */
+/* termina */
+/* Apply termina font to specific elements */
 h1,
 h2,
 h3,
 .subheadline {
-    font-family: "termina", sans-serif !important;
+    font-family: termina, sans-serif !important;
 }
 
 .header .hs-menu-wrapper ul li a {
@@ -243,7 +240,7 @@ h3,
 .hs-button,
 .hs-button.primary.large,
 .hs-button.primary {
-    font-family: "Termina", sans-serif !important;
+    font-family: termina, sans-serif !important;
     font-size: 14px !important;
     text-transform: uppercase !important;
     background-color: transparent !important;
@@ -266,7 +263,7 @@ h3,
     color: var(--black) !important;
     font-size: var(--subheadline-size) !important;
     width: fit-content !important;
-    font-family: "termina", sans-serif !important;
+    font-family: termina, sans-serif !important;
     text-decoration: none;
 }
 
@@ -398,7 +395,7 @@ form legend {
 
     /* Global font styles */
     * {
-        font-family: "termina", sans-serif;
+        font-family: termina, sans-serif;
         font-weight: 400;
         font-style: normal;
         line-height: 2 !important;
@@ -409,7 +406,7 @@ form legend {
     h2,
     h3 {
         color: var(--black) !important;
-        font-weight: 500 !important;
+        font-weight: 400 !important;
         text-transform: uppercase !important;
         line-height: var(--line-height) !important;
         margin: 20px 0 0 0 !important;
@@ -438,6 +435,7 @@ form legend {
     p {
         font-family: 'Roboto', sans-serif !important;
         font-size: var(--p-size) !important;
+        color: var(--black)!important;
         font-weight: 400;
         font-style: normal;
     }
@@ -498,7 +496,7 @@ form legend {
         color: white !important;
         text-decoration: none;
         text-transform: uppercase;
-        font-family: 'Termina', sans-serif !important;
+        font-family: termina, sans-serif !important;
         font-size: 16px;
         transition: 0.5s;
     }
@@ -576,13 +574,13 @@ form legend {
         color: var(--black) !important;
     }
 
-    /* TERMINA */
-    /* Apply Termina font to specific elements */
+    /* termina */
+    /* Apply termina font to specific elements */
     h1,
     h2,
     h3,
     .subheadline {
-        font-family: "termina", sans-serif !important;
+        font-family: termina, sans-serif !important;
     }
 
     .header .hs-menu-wrapper ul li a {
@@ -609,7 +607,7 @@ form legend {
     .hs-button,
     .hs-button.primary.large,
     .hs-button.primary {
-        font-family: "Termina", sans-serif !important;
+        font-family: termina, sans-serif !important;
         font-size: 14px !important;
         text-transform: uppercase !important;
         background-color: transparent !important;
@@ -632,7 +630,7 @@ form legend {
         color: var(--black) !important;
         font-size: var(--subheadline-size) !important;
         width: fit-content !important;
-        font-family: "termina", sans-serif !important;
+        font-family: termina, sans-serif !important;
         text-decoration: none;
     }
 
